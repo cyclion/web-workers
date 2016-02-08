@@ -1,0 +1,26 @@
+ol {
+	background-color: #ccc;
+	width: 20%
+}
+ol li {
+	background-color: #fff;
+    text-align: right;
+	padding-right: 5px;
+	margin: 2px;
+}
+.load-image {
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+}
+.vertical-line {
+    display: flex;
+    align-items: stretch;
+}
+.vertical-line:before{
+    position: absolute;
+    left: 0%;
+    min-height: 100%;
+    border-left: 1px solid #00DFAE;
+    content: '';
+}

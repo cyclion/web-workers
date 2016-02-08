@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Workers: Fibonachi</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="container-fluid">
+    <h1>Fibonachi Series</h1>
+    <div class="row">
+        <div id="container" class="col-md-6 col-sm-12">
+            <h2>No Worker</h2>
+            <form>
+                <input type="number" id="seriesLength" value="35" max="45">
+                <input type="button" id="generateButton" value="Generate Series">
+                <img src="load.gif" class="load-image">
+            </form>
+            <ol id="list">
+            </ol>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="vertical-line"></div>
+            <h2>With Worker</h2>
+            <form>
+                <input type="number" id="seriesLength2" value="35" max="55">
+                <input type="button" id="generateButton2" value="Generate Series">
+                <img src="load.gif" class="load-image">
+            </form>
+            <ol id="list2">
+            </ol>
+        </div>
+    </div>
+
+    <script src="fibo_wo_worker.js"></script>
+    <script src="fibo_with_worker.js"></script>
+    <script scr="worker4.js"></script>
+</body>
+
+</html>
